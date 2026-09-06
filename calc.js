@@ -25,9 +25,7 @@ function operate(option, a, b){
     switch (option) {
         case "+": return add(a, b);
         case "-": return subtract(a, b);
-        case "×":
         case "*": return multiply(a, b);
-        case "÷":
         case "/": return divide(a, b);
         default: return null;
     }
