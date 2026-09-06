@@ -25,7 +25,9 @@ function operate(option, a, b){
     switch (option) {
         case "+": return add(a, b);
         case "-": return subtract(a, b);
+        case "×":
         case "*": return multiply(a, b);
+        case "÷":
         case "/": return divide(a, b);
         default: return null;
     }
@@ -55,7 +57,9 @@ numButtons.forEach(button => {
 const operatorButtons = document.querySelectorAll(".btn-operator");
 
 function setOperator(newOperator) {
-    if (operator !== null) evaluate();
+    if (operator !== null && !shouldResetScreen){
+         evaluate();
+    }
     firstNum = display.textContent;
     operator = newOperator;
     shouldResetScreen = true;
@@ -81,6 +85,7 @@ function evaluate() {
     }
 
     operator = null; 
+    shouldResetScreen = true;
 }
 
 equalsButton.addEventListener("click", evaluate);
