@@ -49,7 +49,7 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #27475a;
+  background-color: #294d61;
   color: #ffffff;
   transition: background-color 0.15s ease, transform 0.05s ease;
 }
