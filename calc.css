@@ -44,7 +44,7 @@ body {
 button {
   flex: 0 0 calc((100% - (14px * 3)) / 4) ;
   height: 60px;
-  font-size: 25px;
+  font-size: 26px;
   font-weight: bold;
   border: none;
   border-radius: 10px;
